@@ -1,0 +1,17 @@
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepDefinitions", // Sadece step definition'ların olduğu paket yeterli
+        plugin = {"pretty", "html:target/cucumber-reports.html"},
+        monochrome = true
+)
+public class TestRunner {
+    // Bu sınıfın içi genellikle boş bırakılır.
+    // Tüm başlangıç ve bitiş işlemleri Hooks sınıfı tarafından yönetilecektir.
+}
