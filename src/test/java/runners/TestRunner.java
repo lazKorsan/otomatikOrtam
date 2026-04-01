@@ -12,6 +12,5 @@ import org.junit.runner.RunWith;
         monochrome = true
 )
 public class TestRunner {
-    // Bu sınıfın içi genellikle boş bırakılır.
-    // Tüm başlangıç ve bitiş işlemleri Hooks sınıfı tarafından yönetilecektir.
+   
 }
